@@ -1,11 +1,12 @@
 /*
 ORDEN DE LOS ESTILOS
 
-1. Posicionamiento
-2. Modelo Caja
-3. Tipografía
-4. Visuales
-5. 
+1. Anchos y Alturas
+2. Posicionamiento
+3. Modelo Caja
+4. Tipografía
+5. Visalues
+6. Miscelaneo
 
 */
 
@@ -30,4 +31,106 @@ ORDEN DE LOS ESTILOS
 html {
 	font-size: 62.5%;
 	font-family: 'DM Sans', sans-serif;
+}
+
+header {
+	width: 100%;
+	min-width: 320px;
+	height: 33.4rem;
+
+
+	position: relative;
+
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+
+	background: linear-gradient(207.8deg, #201E1C 16.69%, #F7931A 100%);
+}
+
+header img {
+	width: 15.1rem;
+	height: 2.4rem;
+	margin-top: 6rem;
+}
+
+.header__title-container {
+	width: 90%;
+	min-width: 288px;
+	max-width: 900px;
+	height: 21.8rem;
+
+	margin-top: 5rem;
+}
+
+.header__title-container h1 {
+	font-weight: 700;
+	font-size: 2.4rem;
+	line-height: 2.6rem;
+
+	color: var(--just-white);
+}
+
+.header__title-container p {
+	margin-top: 2.5rem;
+
+	font-size: 1.4rem;
+	font-weight: 500;
+	line-height: 1.8rem;
+
+	color: var(--soft-orange);
+}
+
+.header__title-container .header__button {
+	width: 22.9rem;
+	height: 4.8rem;
+
+	position: absolute;
+	/* 
+	COMO SE HACEN LOS CALCULOS?
+
+	IMPORTANTE QUE EL "header" tenga el position relative, ya que embaze
+	a el se toma el 100%
+
+	Para el top, recordemos que lo podemos leer como "la distancia entre
+	arriba y el elemento", por lo que con 100% lo ponemos hasta abajo. Los
+	2.4rem vienen porque el boton mideen total de altura 4.8rem, 
+	y restandole la mitad conseguimos que quede entre las 2 secciones.
+
+	Para el left, la idea es la misma, "la distancia entre la
+	izquierda y el elemento" debe de ser del 50% para que este en el medio,
+	menos 11.45rem, que es la mitad del ancho total del boton, que son 22.9rem
+
+	*/
+	top: calc(100% - 2.4rem);
+	left: calc(50% - 11.45rem);
+
+	padding: 1.2rem 1.6rem;
+
+	background-color: var(--off-white);
+	box-shadow: 0px 4px 8px rgba(89, 73, 30, 0.16);
+	border: none;
+	border-radius: 0.4rem;
+}
+
+.header__button a {
+	font-size: 1.4rem;
+	font-weight: bold;
+	text-decoration: none;
+
+	color: var(--black);
+}
+
+.header__button span {
+	width: 1.3rem;
+	height: 0.8rem;
+
+	/*Para que se vea la imagen de la flecha*/
+	display: inline-block;
+
+	margin-left: 1rem;
+
+	background-image: url("./assets/icons/down-arrow.svg");
 }
