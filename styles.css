@@ -110,7 +110,7 @@ header img {
 	padding: 1.2rem 1.6rem;
 
 	background-color: var(--off-white);
-	box-shadow: 0px 4px 8px rgba(89, 73, 30, 0.16);
+	box-shadow: 0 4px 8px rgba(89, 73, 30, 0.16);
 	border: none;
 	border-radius: 0.4rem;
 }
@@ -133,4 +133,210 @@ header img {
 	margin-left: 1rem;
 
 	background-image: url("./assets/icons/down-arrow.svg");
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+}
+
+main {
+	width: 100%;
+	min-width: 320px;
+	height: auto;
+
+	background-color: var(--off-white);
+}
+
+.exchange-container {
+	width: 100%;
+	/* La altura depende del contenido, se puede achicar o agrandar*/
+	height: auto;
+
+	padding-top: 8rem;
+	padding-bottom: 3rem;
+
+	text-align: center;
+}
+
+.exchange-container .background-img {
+	width: 19.5rem;
+	height: 19.5rem;
+
+	margin: 0 auto 5rem;
+
+	background-image: url("./assets/img/Bitcoin.svg");
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+}
+
+.exchange-container__title {
+	width: 90%;
+	min-width: 288px;
+	max-width: 900px;
+
+	margin: 0 auto;
+}
+
+.exchange-container__title h2 {
+	margin-bottom: 3rem;
+
+	font-size: 2.4rem;
+	font-weight: 700;
+	line-height: 2.6rem;
+
+	color: var(--warm-black);
+}
+
+.exchange-container__title p {
+	font-size: 1.4rem;
+	font-weight: 500;
+	line-height: 1.8rem;
+
+	color: #757575;
+}
+
+.exchange-container__table {
+	width: 100%;
+
+	display: flex;
+
+	/*Nos sirve para generar un scroll horizontal*/
+	overflow: scroll;
+	/* Nos da un efecto suavizado en lugar de teletransportarnos*/
+	scroll-behavior: smooth;
+}
+
+/* Eliminamos la barra de scroll, para que no se vea */
+.exchange-container__table::-webkit-scrollbar {
+	display: none;
+}
+
+/* 
+Usando flexbox, 
+indicamos que cada tabla debe ocupar 
+un espacio de 1 y el 100
+*/
+.table-container {
+	position: relative;
+	flex: 1 0 100%;
+}
+
+.exchange-container__table .table-container h3 {
+	/* Tanto el titulo como el grid tienen el mismo width
+	esto va ayudara a posicionar y centrar todo mejor*/
+	width: 60%;
+
+	margin: 5rem auto 1.2rem auto;
+	/* Posicionando el titulo a ojo de buen cubero*/
+	padding-left: 1.5rem;
+
+	font-weight: 700;
+	font-size: 1.8rem;
+	line-height: 2.3rem;
+	text-align: left;
+
+	color: var(--bitcoin-orange);
+}
+
+.table-container__grid {
+	width: 60%;
+	min-width: 235px;
+	max-width: 500px;
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+
+	margin: 0 auto;
+
+	background-color: var(--just-white);
+	border-radius: 0.8rem;
+}
+
+.table-container__grid .table-container__grid-child {
+	padding: 1rem 1.2rem 1rem 1.2rem;
+
+	font-family: "Inter", sans-serif;
+
+	border-bottom: 0.15rem solid var(--off-white);
+}
+
+.table-container__grid .table-container__grid-child--name {
+	font-weight: 500;
+	font-size: 1.6rem;
+	text-align: left;
+
+	border-right: 0.15rem solid var(--off-white);
+	color: #B5B0AC;
+}
+
+.table-container__grid .table-container__grid-child--value {
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+
+	font-weight: 400;
+	font-size: 1.4rem;
+
+	color: #757575;
+}
+
+.table-container__grid-child--value span {
+	width: 1.1rem;
+	height: 0.6rem;
+
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+}
+
+.table-container__grid-child--value .grid-child--value-down {
+	background-image: url("./assets/icons/trending-down.svg");
+}
+
+.table-container__grid-child--value .grid-child--value-up {
+	background-image: url("./assets/icons/trending-up.svg");
+}
+
+.table-container .table-container__today-date {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+	width: 19rem;
+	height: 3.1rem;
+
+	margin: 2rem auto 0;
+	padding: 0.8rem;
+
+	font-family: "Inter", sans-serif;
+	font-size: 1.2rem;
+	font-weight: 500;
+	line-height: 1.5rem;
+
+	color: var(--warm-black);
+	background-color: var(--soft-orange);
+	border-radius: 0.8rem;
+}
+
+.table-container .table-container__today-date span {
+	font-weight: 700;
+}
+
+.exchange-container__table .table-container--comisions h3 {
+	color: var(--secondary-blue);
+}
+
+.table-container--comisions .table-container__today-date {
+	background-color: var(--soft-blue);
+}
+
+.table-container .table-container__next-table img {
+	position: absolute;
+	right: 3rem;
+	top: calc(50% + 0.8rem);
+}
+
+.table-container .table-container__prev-table img {
+	position: absolute;
+	left: 3rem;
+	top: calc(50% + 0.8rem);
 }
