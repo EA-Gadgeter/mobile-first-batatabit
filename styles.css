@@ -340,3 +340,118 @@ un espacio de 1 y el 100
 	left: 3rem;
 	top: calc(50% + 0.8rem);
 }
+
+.main-product-detail {
+	position: relative;
+
+	width: 100%;
+	min-width: 320px;
+	height: auto;
+
+	padding: 2rem 1rem;
+
+	background-color: var(--warm-black);
+}
+
+.product-detail__icon {
+	position: absolute;
+
+	width: 4rem;
+	height: 2.4rem;
+
+	background-image: url("./assets/icons/batata.svg");
+
+	top: -1rem;
+	left: calc(50% - 2rem);
+}
+
+.product-detail__title {
+	width: 90%;
+	height: auto;
+	min-width: 288px;
+
+	margin: 0 auto;
+	margin-top: 5rem;
+
+	text-align: center;
+}
+
+.product-detail__title h2 {
+	font-size: 2.4rem;
+	font-weight: 700;
+	line-height: 2.6rem;
+
+	color: var(--just-white);
+}
+
+.product-detail__title p {
+	margin: 2rem 0;
+
+	font-size: 1.4rem;
+	font-weight: 500;
+	line-height: 1.8rem;
+
+	color: #808080;
+}
+
+.pruduct-detail__card {
+	width: 90%;
+	min-width: 288px;
+	max-width: 400px;
+	height: 15rem;
+
+	padding: 1.6rem;
+	margin: 1.6rem auto;
+
+	background-color: #282623;
+	box-shadow: 0 0.4rem 0.8rem rgba(0, 0, 0, 0.16);
+	border-radius: 0.4rem;
+}
+
+.pruduct-detail__card .pruduct-detail__card-icon {
+	/* Necesario para que se pueda mostrar la imagen*/
+	display: inline-block;
+
+	width: 2rem;
+	height: 2rem;
+
+	margin-bottom: 1rem;
+
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+}
+
+.clock {
+	background-image: url("./assets/icons/clock.svg");
+}
+
+.eye {
+	background-image: url("./assets/icons/eye.svg");
+}
+
+.dollar {
+	background-image: url("./assets/icons/dollar-sign.svg");
+}
+
+.check {
+	background-image: url("./assets/icons/check-circle.svg");
+}
+
+.pruduct-detail__card .product__card-title {
+	margin-bottom: 1.5rem;
+
+	font-size: 1.8rem;
+	font-weight: 700;
+	line-height: 1.8rem;
+
+	color: var(--just-white);
+}
+
+.pruduct-detail__card .product__card-body {
+	font-size: 1.4rem;
+	font-weight: 500;
+	line-height: 1.8rem;
+
+	color: #808080;
+}
