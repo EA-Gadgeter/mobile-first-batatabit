@@ -398,7 +398,7 @@ un espacio de 1 y el 100
 	width: 90%;
 	min-width: 288px;
 	max-width: 400px;
-	height: 15rem;
+	min-height: 15rem;
 
 	padding: 1.6rem;
 	margin: 1.6rem auto;
@@ -454,4 +454,27 @@ un espacio de 1 y el 100
 	line-height: 1.8rem;
 
 	color: #808080;
+}
+
+.bitcoin-img-container {
+	width: 100%;
+	min-width: 320px;
+	height: 50vh;
+
+	background-image: url("./assets/img/bitcoinbaby2x.jpg");
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+}
+
+.bitcoin-img-container h2 {
+	margin: 0 auto;
+	padding-top: 6rem;
+
+	font-size: 2.4rem;
+	font-weight: 700;
+	line-height: 2.6rem;
+	color: var(--just-white);
+
+	text-align: center;
 }
