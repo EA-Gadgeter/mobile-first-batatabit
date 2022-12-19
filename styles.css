@@ -478,3 +478,174 @@ un espacio de 1 y el 100
 
 	text-align: center;
 }
+
+.main-plans-container {
+	width: 100%;
+	min-width: 320px;
+
+	padding-bottom: 7rem;
+
+	text-align: center;
+	background-color: var(--off-white);
+}
+
+.main-plans-container .plans-container__title {
+	width: 90%;
+	min-width: 288px;
+	height: auto;
+
+	margin: 0 auto;
+	margin-bottom: 5rem;
+}
+
+.plans-container__title h2 {
+	padding-top: 7rem;
+
+	font-size: 2.4rem;
+	font-weight: 700;
+	line-height: 2.6rem;
+
+	color: var(--black);
+}
+
+.plans-container__title p {
+	margin-top: 3rem;
+
+	font-size: 1.4rem;
+	font-weight: 500;
+	line-height: 1.8rem;
+	color: #757575;
+}
+
+.plans-container__card {
+	position: relative;
+
+	width: 70%;
+	min-width: 230px;
+	max-width: 300px;
+	height: 25rem;
+
+	margin: 5rem auto 0;
+	padding: 0 1.5rem;
+
+	background-color: var(--just-white);
+	border-radius: 1.5rem;
+	box-shadow: 0 0.4rem 0.8rem rgba(89, 73, 30, 0.16);
+}
+
+.plans-container__card .recommended-title {
+	position: absolute;
+	left: calc(50% - 6rem);
+	top: calc(0% - 1.55rem);
+
+	width: 12rem;
+	height: 3.1rem;
+
+	padding: 0.8rem;
+
+	font-family: "Inter";
+	font-size: 1.2rem;
+	font-weight: 700;
+	line-height: 1.5rem;
+
+	background-color: var(--bitcoin-orange);
+	border-radius: 0.8rem;
+	color: var(--just-white);
+}
+
+.plan-info-container .plan-card__title {
+	padding-top: 3rem;
+
+	font-size: 1.4rem;
+	font-weight: 500;
+	line-height: 1.8rem;
+
+	color: var(--black);
+}
+
+.plan-info-container .plan-card__price {
+	padding: 0.5rem 0;
+
+	font-family: "Inter";
+	font-size: 5.2rem;
+	font-weight: 700;
+	line-height: 6.3rem;
+
+	color: var(--black);
+}
+
+.plan-card__price span {
+
+	font-size: 1.2rem;
+	font-weight: 500;
+
+	/* El parrafo que es el padre y el span que esta dentro, tienen
+	tamaños de fuente difirente, aqui es donde tanto el line-height
+	como el vertical-align son fundamentales para conseguir el resultado
+	final*/
+	line-height: 3.5rem;
+
+	vertical-align: text-top;
+}
+
+.plan-info-container .plan-card__saving {
+	font-family: "Inter";
+	font-size: 1.2rem;
+	font-weight: 500;
+	line-height: 1.5rem;
+
+	color: #757575;
+}
+
+.plan-card__ca {
+	width: 15.1rem;
+	height: 4.8rem;
+
+	margin-top: 2rem;
+
+	font-family: 'DM Sans', sans-serif;
+	font-weight: 700;
+	font-size: 1.4rem;
+	line-height: 1.8rem;
+
+	border-radius: 0.4rem;
+	background-color: var(--off-white);
+	border: 0.2rem solid var(--bitcoin-orange);
+}
+
+.plan-card__ca span {
+	width: 2rem;
+	height: 2rem;
+
+	display: inline-block;
+	background-image: url("./assets/icons/orange-right-arrow.svg");
+
+	vertical-align: text-bottom;
+}
+
+.plans-container__card .recommended-title--basic {
+	background-color: var(--secondary-blue);
+}
+
+.plans-container__card--limited {
+	background-color: var(--warm-black);
+}
+
+.plans-container__card--limited .recommended-title {
+	background-color: var(--grey);
+	color: var(--black);
+}
+
+.plans-container__card--limited .plan-card__title,
+.plans-container__card--limited .plan-card__price {
+	color: var(--just-white);
+}
+
+.plans-container__card--limited .plan-card__saving {
+	color: var(--grey);
+}
+
+.plans-container__card--limited .plan-card__ca {
+	background-color: #282623;
+	color: var(--just-white);
+}
