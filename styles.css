@@ -517,20 +517,81 @@ un espacio de 1 y el 100
 	color: #757575;
 }
 
+.slider-container {
+    width: 100%;
+    position: relative;
+}
+
+.slider-container .arrow {
+    position: absolute;
+	bottom: calc(50% - 2rem);
+
+	display: inline-block;
+
+	width: 1.2rem;
+    height: 1.2rem;
+
+    
+    z-index: 1;
+    background-repeat: no-repeat;   
+}
+.slider-container #left-gray-arrow {
+    left: calc(100% - 86%);
+    background-image: url("./assets/icons/left-arrow.svg");
+}
+
+.slider-container #right-gray-arrow {
+    right:  calc(100% - 86%);
+    background-image: url("./assets/icons/right-arrow.svg");
+}
+
+.plans-container__slider {
+	/* Generamos un overflow con flexbox*/
+	display: flex;
+	gap: 2rem;
+
+	height: 31.6rem;
+
+	/* Le decimos que genere un overflox en el eje x tipo scroll*/
+	overflow-x: scroll;
+
+	overscroll-behavior-x: contain;
+
+	scroll-behavior: smooth;
+
+	/* No deja que se quede en medio el scroll, no lleva a un tarjeta
+	directamente */
+	scroll-snap-type: x proximity;
+}
+
+.plans-container__slider::-webkit-scrollbar {
+	display: none;
+}
+
 .plans-container__card {
 	position: relative;
 
+	/* Cuando hacemos scroll, intenta centarlo 
+	en el elemento para verlo */
+	scroll-snap-align: center;
+
 	width: 70%;
-	min-width: 230px;
+	min-width: 190px;
 	max-width: 300px;
 	height: 25rem;
 
 	margin: 5rem auto 0;
+
 	padding: 0 1.5rem;
 
 	background-color: var(--just-white);
 	border-radius: 1.5rem;
 	box-shadow: 0 0.4rem 0.8rem rgba(89, 73, 30, 0.16);
+}
+
+#dummy {
+    min-width: calc(100% - 70%);
+    visibility: hidden;
 }
 
 .plans-container__card .recommended-title {
@@ -648,4 +709,38 @@ un espacio de 1 y el 100
 .plans-container__card--limited .plan-card__ca {
 	background-color: #282623;
 	color: var(--just-white);
+}
+
+footer {
+	width: 100%;
+	height: 15rem;
+
+	display: flex;
+
+	background-color: var(--bitcoin-orange);
+}
+
+footer section {
+	width: 50%;
+
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+footer .left ul {
+	font-size: 1.4rem;
+	font-weight: 500;
+	line-height: 1.8rem;
+
+	list-style: none;
+}
+
+.left li {
+	margin: 1rem 0;
+}
+
+.left a {
+	text-decoration: none;
+	color: var(--just-white)
 }
