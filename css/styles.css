@@ -132,7 +132,7 @@ header img {
 
 	margin-left: 1rem;
 
-	background-image: url("./assets/icons/down-arrow.svg");
+	background-image: url("../assets/icons/down-arrow.svg");
 	background-size: cover;
 	background-position: center;
 	background-repeat: no-repeat;
@@ -163,7 +163,7 @@ main {
 
 	margin: 0 auto 5rem;
 
-	background-image: url("./assets/img/Bitcoin.svg");
+	background-image: url("../assets/img/Bitcoin.svg");
 	background-size: cover;
 	background-position: center;
 	background-repeat: no-repeat;
@@ -289,11 +289,11 @@ un espacio de 1 y el 100
 }
 
 .table-container__grid-child--value .grid-child--value-down {
-	background-image: url("./assets/icons/trending-down.svg");
+	background-image: url("../assets/icons/trending-down.svg");
 }
 
 .table-container__grid-child--value .grid-child--value-up {
-	background-image: url("./assets/icons/trending-up.svg");
+	background-image: url("../assets/icons/trending-up.svg");
 }
 
 .table-container .table-container__today-date {
@@ -359,7 +359,7 @@ un espacio de 1 y el 100
 	width: 4rem;
 	height: 2.4rem;
 
-	background-image: url("./assets/icons/batata.svg");
+	background-image: url("../assets/icons/batata.svg");
 
 	top: -1rem;
 	left: calc(50% - 2rem);
@@ -423,19 +423,19 @@ un espacio de 1 y el 100
 }
 
 .clock {
-	background-image: url("./assets/icons/clock.svg");
+	background-image: url("../assets/icons/clock.svg");
 }
 
 .eye {
-	background-image: url("./assets/icons/eye.svg");
+	background-image: url("../assets/icons/eye.svg");
 }
 
 .dollar {
-	background-image: url("./assets/icons/dollar-sign.svg");
+	background-image: url("../assets/icons/dollar-sign.svg");
 }
 
 .check {
-	background-image: url("./assets/icons/check-circle.svg");
+	background-image: url("../assets/icons/check-circle.svg");
 }
 
 .pruduct-detail__card .product__card-title {
@@ -461,7 +461,7 @@ un espacio de 1 y el 100
 	min-width: 320px;
 	height: 50vh;
 
-	background-image: url("./assets/img/bitcoinbaby2x.jpg");
+	background-image: url("../assets/img/bitcoinbaby2x.jpg");
 	background-size: cover;
 	background-position: center;
 	background-repeat: no-repeat;
@@ -531,18 +531,17 @@ un espacio de 1 y el 100
 	width: 1.2rem;
     height: 1.2rem;
 
-    
     z-index: 1;
     background-repeat: no-repeat;   
 }
 .slider-container #left-gray-arrow {
     left: calc(100% - 86%);
-    background-image: url("./assets/icons/left-arrow.svg");
+    background-image: url("../assets/icons/left-arrow.svg");
 }
 
 .slider-container #right-gray-arrow {
     right:  calc(100% - 86%);
-    background-image: url("./assets/icons/right-arrow.svg");
+    background-image: url("../assets/icons/right-arrow.svg");
 }
 
 .plans-container__slider {
@@ -679,7 +678,7 @@ un espacio de 1 y el 100
 	height: 2rem;
 
 	display: inline-block;
-	background-image: url("./assets/icons/orange-right-arrow.svg");
+	background-image: url("../assets/icons/orange-right-arrow.svg");
 
 	vertical-align: text-bottom;
 }

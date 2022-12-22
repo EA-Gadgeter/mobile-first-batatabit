@@ -1,0 +1,16 @@
+.plans-container__slider {
+    justify-content: center;
+}
+
+.slider-container .arrow {
+    display: none !important;
+}
+
+.plans-container__card {
+    width: 30%;
+    margin: 5rem 0 0;
+}
+
+#dummy {
+    display: none;
+}
